@@ -66,8 +66,8 @@ namespace WindowsFormsApp1
 
             date1 = date1.AddSeconds(1);
             label2.Text = date1.ToString("mm:ss");
-            double q = (date1.Second / 60.0);
-            minutes = date1.Minute + q;
+            double q = (date1.Second / 60.0); // высчитываем соотношение между оставшися секундами и 60
+            minutes = date1.Minute + q;// прибавляем ко всем минутам таймера наше соотношение (для точного растета скороти набора текста)
         }
 
         public void ProverkaNaOkonchanieText()
